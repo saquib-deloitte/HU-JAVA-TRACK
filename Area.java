@@ -1,53 +1,30 @@
 public class Area {
-    private double cat;
-    private String dog;
 
-
-    public Animal() {
-        cat = 1.0;
-        dog = "red";
+    void calAreaSquare(float a) {
+        System.out.println("Area of Square is: " + a * a + " sq unit");
     }
 
-
-    public Animal(double r) {
-        cat = r;
-        dog = "red";
+    void calAreaRectangle(float a, float b) {
+        System.out.println("Area of Rectangle is: " + a * b + " sq unit");
     }
 
-
-    public double getval() {
-        return cat;
+    void calAreaTriangle(float a, float b) {
+        float tri =(float) a * b * 1 / 2;
+        System.out.println("Area of Triangle is: " + tri + " sq unit");
     }
 
-
-    public double getval2() {
-        return cat*cat;
+    void calAreaCircle(float a) {
+        float ar = (float)3.142 * a * a;
+        System.out.println("Area of Circle is: " + ar + " sq unit");
     }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-public class Area1 {
     public static void main(String[] args) {
-
-        Animal c1 = new Animal();
-
-        System.out.println("The values are "
-                + c1.getval() + " and another " + c1.getval2());
-
-        Animal c2 = new Animal(2.0);
-
-        System.out.println("The values are "
-                + c2.getval() + " and another " + c2.getval2());
+        Area calc = new Area();
+        calc.calAreaSquare(4);
+        calc.calAreaRectangle(4, 9);
+        calc.calAreaTriangle(5, 8);
+        calc.calAreaCircle(7);
 
     }
+
 }
