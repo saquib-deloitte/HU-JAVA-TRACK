@@ -45,7 +45,7 @@ public class TestAnimal {
                 + c1.getval() + " and another " + c1.getval2());
 
         Animal c2 = new Animal(2.0);
-
+    //Add
         System.out.println("The values are "
                 + c2.getval() + " and another " + c2.getval2());
 
